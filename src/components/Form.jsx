@@ -32,7 +32,9 @@ class Form extends Component {
         <label htmlFor="trunfo-input">
           <input data-testid="trunfo-input" type="checkbox" />
         </label>
-        <button type="button" data-testid="save-button">Salvar</button>
+        <div>
+          <button type="button" data-testid="save-button">Salvar</button>
+        </div>
       </form>
     );
   }
