@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 
 class Form extends Component {
   render() {
-    const { cardName,
+    const {
+      cardName,
       cardDescription,
       cardAttr1,
       cardAttr2,
@@ -11,7 +12,7 @@ class Form extends Component {
       cardImage,
       cardRare,
       cardTrunfo,
-      hasTrunfo,
+      /* hasTrunfo, */
       isSaveButtonDisabled,
       onInputChange,
       onSaveButtonClick,
