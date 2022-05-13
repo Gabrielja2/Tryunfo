@@ -1,5 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import NameInput from './NameInput';
+import TextArea from './TextArea';
+import Attr1 from './Attr1';
+import Attr2 from './Attr2';
+import Attr3 from './Attr3';
+import TextInput from './TextInput';
+import Select from './Select';
+import Checkbox from './Checkbox';
 
 class Form extends Component {
   render() {
@@ -17,74 +25,41 @@ class Form extends Component {
       onInputChange,
       onSaveButtonClick,
     } = this.props;
+
     return (
       <form>
-        <label htmlFor="name-input">
-          <input
-            onChange={ onInputChange }
-            value={ cardName }
-            data-testid="name-input"
-            type="text"
-          />
-        </label>
-        <label htmlFor="description-input">
-          <textarea
-            data-testid="description-input"
-            value={ cardDescription }
-            onChange={ onInputChange }
-          />
-        </label>
-        <label htmlFor="attr1-input">
-          <input
-            data-testid="attr1-input"
-            type="number"
-            value={ cardAttr1 }
-            onChange={ onInputChange }
-          />
-        </label>
-        <label htmlFor="attr2-input">
-          <input
-            data-testid="attr2-input"
-            type="number"
-            value={ cardAttr2 }
-            onChange={ onInputChange }
-          />
-        </label>
-        <label htmlFor="attr3-input">
-          <input
-            data-testid="attr3-input"
-            type="number"
-            value={ cardAttr3 }
-            onChange={ onInputChange }
-          />
-        </label>
-        <label htmlFor="image-input">
-          <input
-            data-testid="image-input"
-            type="text"
-            value={ cardImage }
-            onChange={ onInputChange }
-          />
-        </label>
-        <label htmlFor="rare-input">
-          <select
-            data-testid="rare-input"
-            value={ cardRare }
-            onChange={ onInputChange }
-          >
-            <option value="normal">normal</option>
-            <option value="raro">raro</option>
-            <option value="muito raro">muito raro</option>
-          </select>
-        </label>
-        <label htmlFor="trunfo-input">
-          <input
-            data-testid="trunfo-input"
-            type="checkbox"
-            checked={ cardTrunfo }
-            onChange={ onInputChange }
-          />
-        </label>
+        <NameInput
+          onInputChange={ onInputChange }
+          value={ cardName }
+        />
+        <TextArea
+          onInputChange={ onInputChange }
+          value={ cardDescription }
+        />
+        <Attr1
+          onInputChange={ onInputChange }
+          value={ cardAttr1 }
+        />
+        <Attr2
+          onInputChange={ onInputChange }
+          value={ cardAttr2 }
+        />
+        <Attr3
+          onInputChange={ onInputChange }
+          value={ cardAttr3 }
+        />
+        <TextInput
+          onInputChange={ onInputChange }
+          value={ cardImage }
+        />
+        <Select
+          onInputChange={ onInputChange }
+          value={ cardRare }
+        />
+        <Checkbox
+          onInputChange={ onInputChange }
+          value={ cardTrunfo }
+        />
         <div>
           <button
             type="button"

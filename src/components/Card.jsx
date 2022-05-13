@@ -16,7 +16,7 @@ class Card extends Component {
     return (
       <div>
         <p data-testid="name-card">
-          {cardName}
+          { cardName }
         </p>
         <img
           alt={ cardName }
