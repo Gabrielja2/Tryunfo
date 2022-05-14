@@ -13,6 +13,8 @@ class Attr1 extends React.Component {
           type="number"
           name="cardAttr1"
           onChange={ onInputChange }
+          min="0"
+          max="90"
         />
       </label>
     );

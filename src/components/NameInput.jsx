@@ -6,7 +6,7 @@ class NameInput extends React.Component {
     const { onInputChange, value } = this.props;
     return (
       <label htmlFor="name-input">
-        Nome:
+        Nome
         <br />
         <input
           data-testid="name-input"

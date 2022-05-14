@@ -20,6 +20,6 @@ class Checkbox extends React.Component {
 }
 Checkbox.propTypes = {
   onInputChange: PropTypes.func.isRequired,
-  value: PropTypes.string.isRequired,
+  value: PropTypes.bool.isRequired,
 };
 export default Checkbox;
