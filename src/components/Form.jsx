@@ -27,7 +27,7 @@ class Form extends Component {
     } = this.props;
 
     return (
-      <form>
+      <form className="form">
         <NameInput
           onInputChange={ onInputChange }
           value={ cardName }
@@ -83,11 +83,11 @@ Form.propTypes = {
   cardAttr3: PropTypes.string.isRequired,
   cardImage: PropTypes.string.isRequired,
   cardRare: PropTypes.string.isRequired,
-  cardTrunfo: PropTypes.bool.isRequired,
+  cardTrunfo: PropTypes.string.isRequired,
   /* hasTrunfo: PropTypes.bool.isRequired, */
   isSaveButtonDisabled: PropTypes.bool.isRequired,
   onInputChange: PropTypes.func.isRequired,
-  onSaveButtonClick: PropTypes.func.isRequired,
+  onSaveButtonClick: PropTypes.bool.isRequired,
 };
 
 export default Form;

@@ -7,6 +7,7 @@ class NameInput extends React.Component {
     return (
       <label htmlFor="name-input">
         Nome:
+        <br />
         <input
           data-testid="name-input"
           value={ value }

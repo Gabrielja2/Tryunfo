@@ -7,6 +7,7 @@ class Select extends React.Component {
     return (
       <label htmlFor="rare-input">
         Raridade
+        <br />
         <select
           data-testid="rare-input"
           value={ value }

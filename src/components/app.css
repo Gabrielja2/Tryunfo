@@ -2,19 +2,52 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 :root {
   font-size: 62.5%;
 }
 
-h1 {
-  padding-block: 1.7rem;
+body {
+  background: white;
+  color: hsl(177, 41%, 23%);
+  font-size: 1.6rem;
 }
 
-form {
+h1 {
+  padding-bottom: 1.7rem;
+  padding-left: 5rem;
+}
+
+.form {
+  background:#bbbaba;
+  border: 2px black solid;
   display: flex;
   flex-direction: column;
   gap: 1.7rem;
+  padding-left: 5rem;
+  padding-top: 5rem;
+  width: 100%;
 }
 
+.container {
+  border: 1px red solid;
+  display: flex;
+  height: 100vh;
+  margin: 1.7rem;
+}
+
+.cont {
+  border: 1px red solid;
+  padding: 5rem 10rem;
+  width: 100%;
+}
+
+.card {
+  background: hsla(202, 86%, 33%, 0.753);
+  border: 2px blue solid;
+  padding-top: 5rem;
+  text-align: center;
+  width: 100%;
+}

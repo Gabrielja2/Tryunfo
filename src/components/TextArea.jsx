@@ -7,6 +7,7 @@ class TextArea extends React.Component {
     return (
       <label htmlFor="description-input">
         Descrição
+        <br />
         <textarea
           data-testid="description-input"
           value={ value }
