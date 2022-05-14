@@ -21,7 +21,7 @@ h1 {
 }
 
 .form {
-  background:#bbbaba;
+  background: #bbbaba;
   border: 2px black solid;
   display: flex;
   flex-direction: column;
