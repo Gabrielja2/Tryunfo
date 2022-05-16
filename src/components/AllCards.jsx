@@ -4,12 +4,12 @@ import Card from './Card';
 
 class AllCards extends React.Component {
   render() {
-    const { localSalvo, deleteCard } = this.props;
+    const { cards, deleteCard } = this.props;
     return (
-      <div>
+      <div className="cartas">
         <h1>Cartas</h1>
         <div>
-          { localSalvo.map((card) => (
+          { cards.map((card) => (
             <div key={ card.cardName }>
               <Card
                 cardName={ card.cardName }
@@ -24,10 +24,11 @@ class AllCards extends React.Component {
               <button
                 type="button"
                 data-testid="delete-button"
-                onClick={ deleteCard }
+                onClick={ () => deleteCard(card.cardName) }
               >
                 Excluir
               </button>
+              <hr />
             </div>
           ))}
         </div>
@@ -36,10 +37,10 @@ class AllCards extends React.Component {
   }
 }
 AllCards.propTypes = {
-  localSalvo: PropTypes.arrayOf(PropTypes.shape()),
+  cards: PropTypes.arrayOf(PropTypes.shape()),
   deleteCard: PropTypes.func.isRequired,
 };
 AllCards.defaultProps = {
-  localSalvo: [],
+  cards: [],
 };
 export default AllCards;
