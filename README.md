@@ -14,7 +14,7 @@
 <details>
   <summary><strong>:memo: Habilidades</strong></summary><br />
 
-  Neste projeto, verificamos se voce é capaz de:
+  Neste projeto, reforçamos nossa capacidade de:
 
   * Ler o estado de um componente e usá-lo para alterar o que exibimos no browser
 
