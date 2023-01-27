@@ -14,15 +14,21 @@
 <details>
   <summary><strong>:memo: Habilidades</strong></summary><br />
 
-  Nesse projeto foi utilizado:
+  Neste projeto, verificamos se voce é capaz de:
 
-  * _Context API_ do **React** para gerenciar estado.
-  * _React Hook useState_;
-  * _React Hook useContext_;
-  * _React Hook useEffect_;
-  * _React Hooks_ customizados.
-  * Escrever testes para garantir que sua aplicação possua uma boa cobertura de testes.
+  * Ler o estado de um componente e usá-lo para alterar o que exibimos no browser
 
+  * Inicializar um componente, dando a ele um estado pré-definido
+
+  * Atualizar o estado de um componente
+
+  * Capturar eventos utilizando a sintaxe do React
+
+  * Criar formulários utilizando sintaxe JSX com as tags: `input`, `textarea`, `select`, `form`, `checkbox`
+
+  * Transmitir informações de componentes filhos para componentes pais via callbacks
+
+---
 </details>
 
 # Orientações
