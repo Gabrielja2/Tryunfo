@@ -11,6 +11,13 @@
         - Jogar com o baralho criado.
 
    <br />
+   
+   Essa aplicação foi desenvolvida em React com manipulação de estados em classes. 
+
+É composta por três filtros de listagem de cartas: filtro por **nome**, por **raridade** e por **Super Trunfo**. Os filtros **nome** e **raridade** são acumulativos. O filtro **Super Trunfo** funciona de forma independente.
+
+O tema do seu baralho é **livre**, então explore a sua criatividade! Mas use seu bom senso para a criação do seu baralho.
+
 <details>
   <summary><strong>:memo: Habilidades</strong></summary><br />
 
