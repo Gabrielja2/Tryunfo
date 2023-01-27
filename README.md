@@ -28,7 +28,7 @@
 
   * Transmitir informações de componentes filhos para componentes pais via callbacks
 
---
+---
 </details>
 
 # Orientações
